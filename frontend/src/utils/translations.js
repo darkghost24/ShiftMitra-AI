@@ -1,0 +1,50 @@
+export const UI_STRINGS = {
+  hi: {
+    appName: "शिफ्टमित्र",
+    workerTab: "श्रमिक साथी (Worker)",
+    dashboardTab: "प्रबंधन डैशबोर्ड (Manager)",
+    whatsappTab: "व्हाट्सएप बॉट (WhatsApp)",
+    takePhoto: "नोटिस की फोटो लें",
+    pickPreset: "नमूना दस्तावेज़ चुनें",
+    listening: "सुन रहे हैं... बोलिए",
+    speakBtn: "माइक दबाकर बोलें (30 सेकंड)",
+    clearNotice: "समझ आ गया",
+    clarifyNotice: "फिर से समझाएं",
+    comprehensionTitle: "आप अपनी भाषा में बताएं: यह नोटिस क्या कह रहा है?",
+    listenAudio: "आवाज़ में सुनें",
+    history: "पुराने दस्तावेज़",
+    actionHeader: "आपको क्या करना है:"
+  },
+  bn: {
+    appName: "শিফ্টমিত্র",
+    workerTab: "শ্রমিক পোর্টাল (Worker)",
+    dashboardTab: "ম্যানেজমেন্ট ড্যাশবোর্ড (Manager)",
+    whatsappTab: "হোয়াটসঅ্যাপ চ্যাট (WhatsApp)",
+    takePhoto: "নোটিশের ছবি তুলুন",
+    pickPreset: "নমুনা নোটিশ বেছে নিন",
+    listening: "শুনছি... বলুন",
+    speakBtn: "মাইক টিপে বলুন (৩০ সেকেন্ড)",
+    clearNotice: "বুঝেছি",
+    clarifyNotice: "আবার বোঝান",
+    comprehensionTitle: "নিজের ভাষায় বলুন: এই নোটিশে কী বলা হয়েছে?",
+    listenAudio: "মুখে শুনুন",
+    history: "পূর্ববর্তী নোটিশ",
+    actionHeader: "আপনাকে যা করতে হবে:"
+  },
+  en: {
+    appName: "ShiftMitra",
+    workerTab: "Worker Portal",
+    dashboardTab: "Factory Dashboard",
+    whatsappTab: "WhatsApp Simulator",
+    takePhoto: "Snap Photo of Notice",
+    pickPreset: "Choose Sample Notice",
+    listening: "Listening... speak now",
+    speakBtn: "Hold to Speak (Explain in 30s)",
+    clearNotice: "I Understood",
+    clarifyNotice: "Explain Again",
+    comprehensionTitle: "Explain in your own words: What is this notice saying?",
+    listenAudio: "Listen to Voice",
+    history: "Past Documents",
+    actionHeader: "Action Required:"
+  }
+};

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Hind', 'Noto Sans Bengali', 'Inter', sans-serif;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.touch-target {
+  min-height: 48px;
+  min-width: 48px;
+}
