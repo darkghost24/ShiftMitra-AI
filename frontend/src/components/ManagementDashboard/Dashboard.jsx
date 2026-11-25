@@ -2,6 +2,7 @@ import React, { useEffect, useState, useMemo } from "react";
 import { AlertOctagon, CheckCircle2, FileText, Users, RefreshCw, Filter } from "lucide-react";
 import { AnalyticsCharts } from "./AnalyticsCharts";
 import { MisunderstoodTopicsTable } from "./MisunderstoodTopicsTable";
+import API_BASE from "../../utils/api";
 
 export const Dashboard = () => {
   const [data, setData] = useState(null);
@@ -10,7 +11,7 @@ export const Dashboard = () => {
 
   const fetchSummary = async () => {
     try {
-      const res = await fetch("/api/analytics/summary");
+      const res = await fetch(`${API_BASE}/api/analytics/summary`);
       const json = await res.json();
       setData(json);
     } catch (err) {

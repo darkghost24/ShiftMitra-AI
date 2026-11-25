@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Mic, MicOff, CheckCircle, AlertCircle, RefreshCw, Sparkles, Volume2 } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
 import { speakText } from "../../utils/speechHelper";
+import API_BASE from "../../utils/api";
 
 export const ExplainBackLoop = ({ doc }) => {
   const { lang, t } = useLanguage();
@@ -57,7 +58,7 @@ export const ExplainBackLoop = ({ doc }) => {
   const runEvaluation = async (spokenText) => {
     setEvaluating(true);
     try {
-      const res = await fetch("/api/comprehension/verify", {
+      const res = await fetch(`${API_BASE}/api/comprehension/verify`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

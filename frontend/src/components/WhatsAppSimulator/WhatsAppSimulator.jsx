@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Send, Image as ImageIcon, Mic, Play, Pause, CheckCheck, RefreshCw, Paperclip, Smile, MoreVertical, Phone, Video, Sparkles } from "lucide-react";
 import { speakText, stopSpeech } from "../../utils/speechHelper";
 import { useLanguage } from "../../context/LanguageContext";
+import API_BASE from "../../utils/api";
 
 export const WhatsAppSimulator = () => {
   const { lang } = useLanguage();
@@ -50,7 +51,7 @@ export const WhatsAppSimulator = () => {
     setSending(true);
 
     try {
-      const res = await fetch("/api/whatsapp/webhook", {
+      const res = await fetch(`${API_BASE}/api/whatsapp/webhook`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

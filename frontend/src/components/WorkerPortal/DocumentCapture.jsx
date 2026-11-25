@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Camera, Sparkles, UploadCloud, RefreshCw } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
+import API_BASE from "../../utils/api";
 
 const PRESETS = [
   {
@@ -28,7 +29,7 @@ export const DocumentCapture = ({ onDocumentProcessed, loading, setLoading }) =>
       formData.append("targetLang", lang);
       formData.append("textHint", textHint);
 
-      const response = await fetch("/api/documents/interpret", {
+      const response = await fetch(`${API_BASE}/api/documents/interpret`, {
         method: "POST",
         body: formData
       });
